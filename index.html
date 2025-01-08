@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-background">
+    <nav class="fixed top-0 z-50 w-full transition-all duration-300" id="navbar">
+        <div class="container flex h-16 items-center justify-between">
+            <span class="text-xl font-bold">Portfolio</span>
+            <div class="flex gap-6">
+                <a href="#about" class="px-4 py-2 hover:bg-gray-100 rounded-md">About</a>
+                <a href="#skills" class="px-4 py-2 hover:bg-gray-100 rounded-md">Skills</a>
+                <a href="#projects" class="px-4 py-2 hover:bg-gray-100 rounded-md">Projects</a>
+                <a href="#contact" class="px-4 py-2 bg-primary text-white rounded-md">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-b from-background to-muted/50">
+            <div class="container flex flex-col-reverse items-center justify-between gap-8 py-32 lg:flex-row lg:gap-16">
+                <div class="flex flex-col items-center text-center lg:items-start lg:text-left">
+                    <h1 class="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+                        Frontend Developer
+                        <br>
+                        <span class="text-primary">Learning Fullstack</span>
+                    </h1>
+                    <p class="mt-6 max-w-[600px] text-lg text-muted-foreground sm:text-xl">
+                        Passionate about creating beautiful user interfaces and expanding my
+                        knowledge into backend development.
+                    </p>
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a href="#projects" class="px-6 py-3 bg-primary text-white rounded-md hover:bg-primary/90">View My Work</a>
+                        <a href="#contact" class="px-6 py-3 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-md">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="relative aspect-square w-full max-w-md lg:max-w-lg">
+                    <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-primary to-primary-foreground opacity-20 blur-3xl"></div>
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/a3c92a73-7459-423c-ad66-d949feebdd84.jpg-CIZIQnVJYg0X6Iz9SqyrpjxW321MSa.jpeg" 
+                         alt="Professional headshot"
+                         class="relative rounded-full object-cover w-full h-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="bg-muted/50 py-20">
+            <div class="container">
+                <h2 class="text-center text-3xl font-bold tracking-tight sm:text-4xl">About Me</h2>
+                <p class="mx-auto mt-6 max-w-2xl text-center text-muted-foreground">
+                    I'm a frontend developer with a growing passion for fullstack
+                    development. My journey in web development started with creating
+                    beautiful user interfaces, and now I'm expanding my skills to include
+                    backend technologies.
+                </p>
+                <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                        <div class="flex flex-col items-center gap-4 p-6">
+                            <svg class="h-12 w-12 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                            <h3 class="text-xl font-semibold">Frontend Development</h3>
+                            <p class="text-center text-muted-foreground">
+                                Experienced in building responsive and interactive user interfaces
+                                using modern frameworks and tools.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                        <div class="flex flex-col items-center gap-4 p-6">
+                            <svg class="h-12 w-12 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                            </svg>
+                            <h3 class="text-xl font-semibold">Backend Journey</h3>
+                            <p class="text-center text-muted-foreground">
+                                Currently learning backend technologies to become a more
+                                well-rounded developer.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm sm:col-span-2 lg:col-span-1">
+                        <div class="flex flex-col items-center gap-4 p-6">
+                            <svg class="h-12 w-12 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 18L22 12L16 6"></path>
+                                <path d="M8 6L2 12L8 18"></path>
+                            </svg>
+                            <h3 class="text-xl font-semibold">Clean Code</h3>
+                            <p class="text-center text-muted-foreground">
+                                Committed to writing maintainable, efficient, and well-documented
+                                code following best practices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20">
+            <div class="container">
+                <h2 class="text-center text-3xl font-bold tracking-tight sm:text-4xl">
+                    Skills & Technologies
+                </h2>
+                <div class="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold">Frontend Development</h3>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">HTML</span>
+                                <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">CSS</span>
+                                <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">JavaScript</span>
+                                <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">TypeScript</span>
+                                <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">React</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold">Currently Learning</h3>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">Node.js</span>
+                                <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">Express</span>
+                                <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">MongoDB</span>
+                                <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm md:col-span-2 lg:col-span-1">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold">Tools & Software</h3>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">Git</span>
+                                <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">GitHub</span>
+                                <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">VS Code</span>
+                                <span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-muted/50 py-20">
+            <div class="container">
+                <h2 class="text-center text-3xl font-bold tracking-tight sm:text-4xl">
+                    Featured Projects
+                </h2>
+                <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden">
+                        <img src="/placeholder.svg?height=400&width=600" alt="E-commerce Platform" class="aspect-video object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold">E-commerce Platform</h3>
+                            <p class="text-muted-foreground">A full-featured e-commerce platform built with Next.js and Stripe integration.</p>
+                            <div class="mt-4 mb-4 flex flex-wrap gap-2">
+                                <span class="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">Next.js</span>
+                                <span class="rounded-full bg-primary/10 px-3 py-1 text-sm text-primary">TypeScript</span>
+                            </div>
+                            <div class="flex gap-4">
+                                <a href="#" class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2">
+                                    <svg class="mr-2 h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    Demo
+                                </a>
+                                <a href="#" class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2">
+                                    <svg class="mr-2 h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Additional project cards would go here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container">
+                <h2 class="text-center text-3xl font-bold tracking-tight sm:text-4xl">
+                    Get in Touch
+                </h2>
+                <div class="mx-auto mt-16 max-w-2xl">
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid gap-6 sm:grid-cols-2">
+                            <div>
+                                <label for="name" class="mb-2 block text-sm font-medium">Name</label>
+                                <input type="text" id="name" required class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                            </div>
+                            <div>
+                                <label for="email" class="mb-2 block text-sm font-medium">Email</label>
+                                <input type="email" id="email" required class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="message" class="mb-2 block text-sm font-medium">Message</label>
+                            <textarea id="message" required class="flex min-h-[150px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"></textarea>
+                        </div>
+                        <button type="submit" class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full">
+                            Send Message
+                        </button>
+                    </form>
+                    <div class="mt-12 flex justify-center gap-6">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-md w-10 h-10 text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </a>
+                        <!-- Add other social media links here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
